@@ -1,0 +1,61 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://localhost/ecommerce-app-h/index.php')
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/h4_Product Categories'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/a_Electronics'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/div_Aduro Wireless Headphones'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/a_Home  Kitchen'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/a_Tools  Home Improvement'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/a_CDs  Vinyl'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/a_Clothings'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/div_Dr. Martens Mens Patch'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/div_Mens Hoodie'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/a_Mobiles'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/div_Iphone 12 Pro Max'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/div_Samsung Galaxy S21 Ultra'))
+
+WebUI.doubleClick(findTestObject('Object Repository/product categoris/product categoris/div_OnePlus 8T'))
+
+WebUI.click(findTestObject('null'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/a_Toys'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/div_Thanos Hot Toys'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/img'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/div_Products'))
+
+WebUI.click(findTestObject('Object Repository/product categoris/product categoris/div_Products'))
+

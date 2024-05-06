@@ -1,0 +1,71 @@
+import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
+import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
+import com.kms.katalon.core.model.FailureHandling as FailureHandling
+import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('http://localhost/ecommerce-app-h/admin/login.php')
+
+WebUI.setText(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/input_Email address_email'), 
+    'harryden@gmail.com')
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/div_Password'))
+
+WebUI.setEncryptedText(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/input_Password_password'), 
+    '8SQVv/p9jVScEs4/2CZsLw==')
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/button_Login'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/a_Brands'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_HP'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Samsung'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Apple'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Sony'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_LG'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_OnePlus'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Excl'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Aduro'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Dr. Martens'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Hot Toys'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/a_Categories'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Electronics'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Home  Kitchen'))
+
+WebUI.doubleClick(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_CDs  Vinyl'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Clothings'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Mobiles'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Automotive Parts  Accessories'))
+
+WebUI.click(findTestObject('Object Repository/list brand name and categoris/Page_Ecommerce/td_Toys'))
+
